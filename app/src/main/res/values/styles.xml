@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="registerTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:text">TextView</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="registerEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="myButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="fabMenuStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="fabSize">normal</item>
+        <item name="menu_colorRipple">@color/teal_200</item>
+        <item name="menu_colorPressed">@color/teal_200</item>
+        <item name="menu_colorNormal">@color/teal_400</item>
+    </style>
+
+    <style name="fabButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="fabSize">normal</item>
+        <item name="fab_colorRipple">@color/teal_200</item>
+        <item name="fab_colorPressed">@color/teal_200</item>
+        <item name="fab_colorNormal">@color/teal_400</item>
+    </style>
+</resources>

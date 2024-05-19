@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/bookNameTextView"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:text="@string/defaultBookName"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/authorNameTextView"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="@string/defaultAuthorName"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@+id/bookNameTextView"
+        app:layout_constraintStart_toStartOf="@id/bookNameTextView"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+    <ImageButton
+        android:id="@+id/removeFavouritiesButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/remove_favourite_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/removeFavButtonDesc"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/addFavouritiesButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add_favourite_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/adddFavButtonDesc"
+        android:visibility="invisible"
+         />
+
+    <ImageButton
+        android:id="@+id/shareBookButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/share_icon"
+        app:layout_constraintEnd_toStartOf="@id/addFavouritiesButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/favButtonDesc"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/isbnTextView"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="@string/defaultISBN"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addFavouritiesButton"
+        app:layout_constraintBaseline_toBaselineOf="@id/authorNameTextView"
+        android:layout_marginEnd="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

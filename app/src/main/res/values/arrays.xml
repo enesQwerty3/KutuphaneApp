@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="searchTypes">
+    <item>Title</item>
+    <item>Author</item>
+    <item>ISBN</item>
+    </string-array>
+
+
+</resources>

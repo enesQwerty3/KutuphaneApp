@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KutuphaneApp</string>
+    <string name="usernameHintText">Kullanıcı Adı</string>
+    <string name="passwordHintText">Şifre</string>
+    <string name="signInButtonText">Giriş Yap</string>
+    <string name="registeredUserText">Kullanıcı zaten kayıtlı!</string>
+    <string name="notRegisteredUserTitleText">Kullanıcı kayıtlı değil lütfen devam etmek için kayıt olun.</string>
+    <string name="notRegisteredUserMessageText">Kullanıcı kayıtlı değil!</string>
+    <string name="usernameAndPasswordEmptyTitleText">"Hata!"</string>
+    <string name="usernameOrPasswordIsWrong">Kullanıcı adı veya şifre hatalı!</string>
+    <string name="usernameAndPasswordEmptyMessageText">"Kullanıcı adı veya şifre boş"</string>
+    <string name="okButtonText">Tamam</string>
+    <string name="signUpTextUnderLine"><u>Kayıt Ol</u></string>
+    <string name="signUpText">Kayıt Ol</string>
+    <string name="sampleUsernameHintText">user1234</string>
+    <string name="samplePasswordHintText">123456789</string>
+    <string name="passwordShowButtonDesc">Şifreyi göster</string>
+    <string name="invalidusernameText">Geçersiz kullanıcı adı formatı!</string>
+    <string name="usernameEmptyText">Kullanıcı adı boş olamaz!</string>
+    <string name="passwordEmptyText">Şifre boş olamaz!</string>
+    <string name="userNameFormatInfo">*Maksimum 8 karakter olmalı ve en az 1 sayı.
+                                        \n*Kullanıcı adı harf ile başlamalı.
+                                        \n*Sadece sayılar ve harfler kabul edilir.</string>
+    <string name="passwordFormatInfo">*Uzunluk 8\-20 karakter arasında olmalı.</string>
+    <string name="homepageText">Anasayfa</string>
+    <string name="searchText">Ara</string>
+    <string name="fabMenuLabel">Kısayol menüsü</string>
+    <string name="signUpSuccessfulTitle">Başarılı</string>
+    <string name="signUpSuccessfulMessage">Kullanıcı kayıdı başarılı.</string>
+    <string name="signUpFailedMessage">Kullanıcı kaydı başarısız! Kullanıcı zaten kayıt edilmiş.</string>
+    <string name="signUpFailedTitle">Kayıt başarısız</string>
+    <string name="favouritesText">Favoriler</string>
+    <string name="favouriteBooksText">Favori Kitapların</string>
+    <string name="remindMe">Beni Hatırla</string>
+    <string name="serachBarText">Ara</string>
+    <string name="nextButtonDesc">Sonraki sonuçlar</string>
+    <string name="previousButtonDesc">Önceki sonuçlar</string>
+    <string name="UnknownText">Unknown</string>
+    <string name="resultFound">Sonuç bulundu: </string>
+    <string name="waitApi">Yeni bir arama yapmadan önce lütfen API\'ın arama sonuçlarını getirmesini bekleyin.</string>
+    <string name="defaultISBN">ISBN 213156\-21312</string>
+    <string name="favButtonDesc">Favorilere kitap ekle</string>
+    <string name="defaultAuthorName">Yazar Adı</string>
+    <string name="defaultBookName">Kitap Adı</string>
+    <string name="removeFavButtonDesc">Favorilerden kaldır</string>
+    <string name="adddFavButtonDesc">Favorilere ekle</string>
+    <string name="bookRemovedFavouritiesText">" favorilerden kaldırıldı."</string>
+    <string name="bookAddedFavouritiesText">" favorilere eklendi"</string>
+    <string name="bookInFavouritiesText">Kitap zaten favorilerde!</string>
+    <string name="searchResultEmptyTitle">Bulunamadı</string>
+    <string name="searchResultEmptyMessage">Aramanıza uygun bir sonuç bulunamadı.</string>
+    <string name="chooserTitleText">Choose an app</string>
+    <string name="kullaniciAdiuyarıGosterDecs">Kullanıcı adı hata göster</string>
+    <string name="sifreUyarıGosterDesc">Şifre hata göster</string>
+    <string name="defaultPageNumber">1</string>
+
+</resources>
