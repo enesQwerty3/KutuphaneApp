@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserSignUpActivity">
+
+    <TextView
+        style="@style/registerTextView"
+        android:id="@+id/kullaniciAdiTextView"
+        android:maxLines="1"
+        android:text="@string/usernameHintText"
+        android:maxLength="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <EditText
+        style="@style/registerEditText"
+        android:id="@+id/kullaniciAdiEditText"
+        android:labelFor="@id/kullaniciAdiTextView"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toEndOf="@id/kullaniciAdiTextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/kullaniciAdiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text"
+        android:hint="@string/sampleUsernameHintText"
+        android:importantForAutofill="no"
+        />
+
+    <ImageButton
+        android:id="@+id/kullaniciAdiuyariGosterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintEnd_toEndOf="@id/kullaniciAdiEditText"
+        app:layout_constraintTop_toTopOf="@id/kullaniciAdiEditText"
+        app:layout_constraintBottom_toBottomOf="@id/kullaniciAdiEditText"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/info_icon"
+        android:contentDescription="@string/kullaniciAdiuyarıGosterDecs"
+        android:visibility="visible"/>
+
+
+    <TextView
+        style="@style/registerTextView"
+        android:id="@+id/sifreTextView"
+        android:text="@string/passwordHintText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kullaniciAdiTextView"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/sifreEditText"
+        style="@style/registerEditText"
+        android:hint="@string/samplePasswordHintText"
+        android:importantForAutofill="no"
+        android:inputType="numberPassword"
+        android:labelFor="@id/sifreTextView"
+        app:layout_constraintStart_toEndOf="@+id/sifreTextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/sifreTextView"
+        app:layout_constraintEnd_toEndOf="@id/kullaniciAdiEditText"
+        />
+
+    <ImageButton
+        android:id="@+id/sifreUyariGosterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintEnd_toEndOf="@id/sifreEditText"
+        app:layout_constraintTop_toTopOf="@id/sifreEditText"
+        app:layout_constraintBottom_toBottomOf="@id/sifreEditText"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/info_icon"
+        android:contentDescription="@string/sifreUyarıGosterDesc"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/sifreGosterButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="5dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintStart_toEndOf="@id/sifreEditText"
+        app:layout_constraintTop_toTopOf="@id/sifreEditText"
+        android:contentDescription="@string/passwordShowButtonDesc" />
+
+    <Button
+        style="@style/myButton"
+        android:id="@+id/kayitOlButton"
+        android:text="@string/signUpText"
+        app:layout_constraintTop_toBottomOf="@id/sifreEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:enabled="false"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

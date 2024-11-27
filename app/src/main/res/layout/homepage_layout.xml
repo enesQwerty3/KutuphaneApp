@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomepageActivity">
+
+    <TextView
+        android:id="@+id/homepageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homepageText"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        />
+
+        <SearchView
+            android:id="@+id/searchView"
+            style="@style/searchViewStyle"
+            android:theme="@style/searchViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homepageTextView"
+            app:layout_constraintEnd_toStartOf="@id/searchTypeSpinner"
+            android:layout_marginTop="10dp"
+            android:iconifiedByDefault="false"
+            android:layout_margin="10dp"
+            android:queryHint="@string/serachBarText"
+            />
+
+    <Spinner
+        android:id="@+id/searchTypeSpinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/searchTypes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchView"
+        app:layout_constraintBottom_toBottomOf="@id/searchView"
+        android:spinnerMode="dialog"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintBottom_toTopOf="@id/nextSearchResults"
+        />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/homepageFabMenu"
+        style="@style/fabMenuStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu_fab_label="@string/fabMenuLabel"
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/favouritesButton"
+            style="@style/fabButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favouriteicon"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/signOutButton"
+            style="@style/fabButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signouticon"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <ImageButton
+        android:id="@+id/nextSearchResults"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow_forward_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/previousSearchResults"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="0dp"
+        android:contentDescription="@string/nextButtonDesc"
+        />
+
+    <ImageButton
+        android:id="@+id/previousSearchResults"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:backgroundTintMode="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow_back_icon"
+        app:layout_constraintEnd_toStartOf="@id/nextSearchResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/previousButtonDesc"
+    />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultPageNumber"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/searchResultsRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

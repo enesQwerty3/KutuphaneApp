@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">KutuphaneApp</string>
+    <string name="usernameHintText">Username</string>
+    <string name="passwordHintText">Password</string>
+    <string name="signInButtonText">Sign In</string>
+    <string name="registeredUserText">User already registered!</string>
+    <string name="notRegisteredUserTitleText">User not registered!</string>
+    <string name="notRegisteredUserMessageText">User not registered please sign up to continue.</string>
+    <string name="usernameAndPasswordEmptyTitleText">"Error!"</string>
+    <string name="usernameAndPasswordEmptyMessageText">"Username or password is empty!"</string>
+    <string name="usernameOrPasswordIsWrong">Username or password is incorrect!</string>
+    <string name="okButtonText">Okay</string>
+    <string name="signUpTextUnderLine"><u>Sign Up</u></string>
+    <string name="signUpText">Sign Up</string>
+    <string name="sampleUsernameHintText">user1234</string>
+    <string name="samplePasswordHintText">123456789</string>
+    <string name="passwordShowButtonDesc">Show password</string>
+    <string name="invalidusernameText">Invalid username format!</string>
+    <string name="usernameEmptyText">Username can\'t be empty!</string>
+    <string name="passwordEmptyText">Password can\'t be empty!</string>
+    <string name="userNameFormatInfo">*Must be between 5-8 characters length and at least include 1 number.
+                                        \n*Username has to start with a letter.
+                                        \n*Only letters and numbers are allowed.</string>
+    <string name="passwordFormatInfo">*Must be between 8\-20 numbers length.</string>
+    <string name="homepageText">Homepage</string>
+    <string name="searchText">Search</string>
+    <string name="fabMenuLabel">Quick menu</string>
+    <string name="signUpSuccessfulTitle">Successful</string>
+    <string name="signUpSuccessfulMessage">User sign up is successful.</string>
+    <string name="signUpFailedMessage">User sign up failed! User is already registered.</string>
+    <string name="signUpFailedTitle">Sign up failed</string>
+    <string name="favouritesText">Favourites</string>
+    <string name="favouriteBooksText">Your Favourite Books</string>
+    <string name="remindMe">Remind Me</string>
+    <string name="serachBarText">Search</string>
+    <string name="nextButtonDesc">Next results</string>
+    <string name="previousButtonDesc">Previous results</string>
+    <string name="UnknownText">Unknown</string>
+    <string name="resultFound">Results found: </string>
+    <string name="waitApi">Please wait API to fetch search results before make a new search.</string>
+    <string name="defaultISBN">ISBN 213156\-21312</string>
+    <string name="favButtonDesc">Add book to favourites</string>
+    <string name="defaultAuthorName">Author Name</string>
+    <string name="defaultBookName">Book Name</string>
+    <string name="removeFavButtonDesc">Remove from favourities</string>
+    <string name="adddFavButtonDesc">Add to favourities</string>
+    <string name="bookRemovedFavouritiesText">"removed from favourities."</string>
+    <string name="bookAddedFavouritiesText">added to favourities.</string>
+    <string name="bookInFavouritiesText">Book already in favourities!</string>
+    <string name="searchResultEmptyTitle">Not Found</string>
+    <string name="searchResultEmptyMessage">Couldn\'t found a result for your search.</string>
+    <string name="chooserTitleText">Choose an app</string>
+    <string name="kullaniciAdiuyarıGosterDecs">Show username warning</string>
+    <string name="sifreUyarıGosterDesc">Show password warning</string>
+    <string name="defaultPageNumber">1</string>
+</resources>
